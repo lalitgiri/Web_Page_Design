@@ -1,0 +1,54 @@
+.box{
+	position :absolute;
+	top:40%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	width:500px;
+	background: rgba(0,0,0,0.8);
+	padding:50px;
+	box-sizing: border-box;
+	box-shadow:0 15px 25px rgba(0,0,0,0.5);
+}
+
+.box h2{
+	margin:0 0 30px;
+	padding: 0;
+	color: white;
+	text-align: center;
+}
+
+.box .inputBox{
+	position: relative;
+}
+
+.box .inputBox input{
+	width: 100%;
+	padding:10px 10px;
+	font-size:16px;
+	border: none;
+	border-bottom:1px solid white; 
+	color: white;
+	outline: none;
+	background: transparent;
+	margin-bottom: 20px;
+}
+
+.box .inputBox label{
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 10px 10px;
+	font-size: 16px;
+	color: white;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.box .inputBox input:focus ~ label,
+.box .inputBox input:valid ~ label{
+	top:-18px;
+	left:0;
+	color: red;
+	font-size: 14px;
+}
+
