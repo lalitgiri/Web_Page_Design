@@ -1,0 +1,70 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+section {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    background: #000;
+}
+
+section .screen {
+    position: relative;
+    flex-grow: 2;
+    display: flex;
+    overflow: hidden;
+    transition: 1s;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+section .screen .content{
+    position: absolute;
+    width: 50%;
+    padding: 4%;
+    background: #fff;
+    text-align: justify;
+    box-sizing: border-box;    
+    transform: translateX(100%);
+    transition: 0.5s;
+}
+section .screen .content h2{
+    border: 0;
+    padding: 0;
+    color: red;
+}
+section .screen:hover .content{
+    transform: translateX(0);
+    transition-delay: 1s;
+}
+section:hover .screen {
+    opacity: 0.1;
+}
+
+section .screen:hover {
+    flex-grow: 4;
+    opacity: 1;
+}
+
+section .screen:nth-child(1) {
+    background: url("image1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+section .screen:nth-child(2) {
+    background: url("image2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+}
+
+section .screen:nth-child(3) {
+    background: url("image3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    /* background-size: contain; */
+}
