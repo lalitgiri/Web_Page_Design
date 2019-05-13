@@ -18,3 +18,9 @@ thead {
 table {
     width:400px;
 }
+
+.full-width{
+    display: block;
+    float: left;
+    width:100%;
+}
