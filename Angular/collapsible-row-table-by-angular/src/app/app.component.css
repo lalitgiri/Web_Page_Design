@@ -1,0 +1,25 @@
+table {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+tr>td>table>tbody>tr>td {
+  border: 2px solid red;
+}
+
+td {
+  text-align: center;
+}
+
+.mainTbody {
+  display: block;
+  height: 200px;
+  overflow: auto;
+}
+
+.mainHead,.mainTbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}

@@ -1,0 +1,70 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+</div>
+<table>
+  <thead>
+    <tr>
+      <th colspan="4">
+        <table>
+          <thead class="mainHead">
+            <tr>
+              <th colspan="4">
+                <table>
+                  <thead>
+                    <th>Column 1</th>
+                    <th>Column 2</th>
+                    <th>Column 3</th>
+                    <th>Column 4</th>
+                  </thead>
+                </table>
+              </th>
+            </tr>
+          </thead>
+        </table>
+      </th>
+    </tr>
+  </thead>
+  <tbody  class="mainTbody">
+    <tr>
+      <td colspan="4">
+        <tbody *ngFor="let item of mockData">
+          <tr>
+            <td colspan="4">
+              <table>
+                <tbody (click)="item.flag = !item.flag">
+                  <tr>
+                    <td>{{item.field1}}</td>
+                    <td>{{item.field2}}</td>
+                    <td>{{item.field3}}</td>
+                    <td>{{item.field4}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+          <tr *ngIf="item.flag">
+            <td colspan="4">
+              <table>
+                <tbody *ngFor="let childItem of mockChildData">
+                  <tr>
+                    <td>{{childItem.field1}}</td>
+                    <td>{{childItem.field2}}</td>
+                    <td>{{childItem.field3}}</td>
+                    <td>{{childItem.field4}}</td>
+                  </tr>
+                </tbody>
+              </table>
+            </td>
+          </tr>
+        </tbody>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+
+<router-outlet></router-outlet>
