@@ -1,0 +1,39 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.box {
+    position: relative;
+    /* top: 25%;
+    left: 50%;
+    transform: translatex(-50%); */
+    height: 400px;
+    width: 300px;
+    background: whitesmoke;
+}
+
+.box img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.box label{
+    position: fixed;
+    display: block;
+    color: whitesmoke;
+    text-align: center;
+    visibility: hidden;
+    font-size: 3em;
+}
+
+.box:hover label{
+    visibility: visible;
+}

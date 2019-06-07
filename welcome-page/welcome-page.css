@@ -1,0 +1,29 @@
+body {
+    padding: 0;
+    margin: 0;
+    /* background: linear-gradient(to right, rgba(255, 0, 0, 0), rgb(0, 132, 255)); */
+    background: cyan;
+}
+
+.center {
+    position: relative;
+    top: 25vh;
+    left: 60vw;
+    height: 50%;
+    width: 30%;
+    transform: translateX(-50vh);
+    background: whitesmoke;
+    align-items: center;
+    text-align: center;
+}
+
+.center div{
+    display: block;
+    position: absolute;
+    background: pink;
+    padding:2%;
+    margin : 2%;
+    height: 20%;
+    box-sizing: border-box;
+    border: 2px solid black;
+}
