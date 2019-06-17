@@ -15,9 +15,13 @@ body{
     width:100%;
     
 }
-
+.content{
+    height:100vh;
+    background-color:white;
+    font-size:36px
+}
 .item:nth-of-type(1){
-    background: url('../images/image1.jpg') red;
+    background: url('../images/image1.jpg') rgba(205,83,81,1);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -26,7 +30,7 @@ body{
 }
 
 .item:nth-of-type(3){
-    background: url('../images/image2.jpg') blue;
+    background: url('../images/image2.jpg') rgba(242,240,99,1);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -34,7 +38,7 @@ body{
 }
 
 .item:nth-of-type(5){
-    background: url('../images/image3.jpg') green;
+    background: url('../images/image3.jpg') rgba(46,150,194,1);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
