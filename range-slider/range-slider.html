@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="range-slider.css">
+    <title>Range Slider</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <input id="range1" type="range" min="0" max="100" value="10" oninput="change(this.value)">
+        <label for="" id="label"></label>
+    </div>
+
+    <script>
+        function change(event) {
+            element = document.getElementById('label');
+            element.style.width = ((8 / 10) * event) + '%';
+        }
+    </script>
+</body>
+
+</html>
