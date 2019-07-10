@@ -1,0 +1,248 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.container {
+    display: block;
+    position: relative;
+    height: 400px;
+    width: 300px;
+}
+
+.container .card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    animation: cardAnimation1 1s ease-in-out 0s 1;
+}
+
+.container .card img {
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+
+.container:hover .card {
+    animation: cardAnimation 1s ease-in-out 0s 1;
+    z-index: 0;
+}
+
+@keyframes cardAnimation1 {
+    0% {
+        left: 0;
+        z-index: 0;
+    }
+    10% {
+        left: -20%;
+        z-index: 0;
+    }
+    20% {
+        left: -40%;
+        z-index: 0;
+    }
+    30% {
+        left: -60%;
+        z-index: 0;
+    }
+    40% {
+        left: -80%;
+        z-index: 0;
+    }
+    50% {
+        left: -100%;
+        z-index: 0;
+    }
+    60% {
+        left: -80%;
+        z-index: 1;
+    }
+    70% {
+        left: -60%;
+        z-index: 1;
+    }
+    80% {
+        left: -40%;
+        z-index: 1;
+    }
+    90% {
+        left: -20%;
+        z-index: 1;
+    }
+    100% {
+        left: 0;
+        z-index: 1;
+    }
+}
+
+@keyframes cardAnimation {
+    0% {
+        left: 0;
+        z-index: 1;
+    }
+    10% {
+        left: -20%;
+        z-index: 1;
+    }
+    20% {
+        left: -40%;
+        z-index: 1;
+    }
+    30% {
+        left: -60%;
+        z-index: 1;
+    }
+    40% {
+        left: -80%;
+        z-index: 1;
+    }
+    50% {
+        left: -100%;
+        z-index: 0;
+    }
+    60% {
+        left: -80%;
+        z-index: 0;
+    }
+    70% {
+        left: -60%;
+        z-index: 0;
+    }
+    80% {
+        left: -40%;
+        z-index: 0;
+    }
+    90% {
+        left: -20%;
+        z-index: 0;
+    }
+    100% {
+        left: 0;
+        z-index: 0;
+    }
+}
+
+.container .content {
+    display: block;
+    position: absolute;
+    top: -2%;
+    left: 2%;
+    z-index: 0;
+    background: turquoise;
+    height: 100%;
+    width: 100%;
+    transition: 1s;
+    animation: contentAnimation1 1s ease-in-out 0s 1;
+    padding: 5%;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.container:hover .content {
+    z-index: 1;
+    animation: contentAnimation 1s ease-in-out 0s 1;
+}
+
+@keyframes contentAnimation {
+    0% {
+        left: 0;
+        z-index: 0;
+    }
+    10% {
+        left: 20%;
+        z-index: 0;
+    }
+    20% {
+        left: 40%;
+        z-index: 0;
+    }
+    30% {
+        left: 60%;
+        z-index: 0;
+    }
+    40% {
+        left: 80%;
+        z-index: 0;
+    }
+    50% {
+        left: 100%;
+        z-index: 1;
+    }
+    60% {
+        left: 80%;
+        z-index: 1;
+    }
+    70% {
+        left: 60%;
+        z-index: 1;
+    }
+    80% {
+        left: 40%;
+        z-index: 1;
+    }
+    90% {
+        left: 20%;
+        z-index: 1;
+    }
+    100% {
+        left: 0;
+        z-index: 1;
+    }
+}
+
+@keyframes contentAnimation1 {
+    0% {
+        left: 0;
+        z-index: 1;
+    }
+    10% {
+        left: 20%;
+        z-index: 1;
+    }
+    20% {
+        left: 40%;
+        z-index: 1;
+    }
+    30% {
+        left: 60%;
+        z-index: 1;
+    }
+    40% {
+        left: 80%;
+        z-index: 1;
+    }
+    50% {
+        left: 100%;
+        z-index: 1;
+    }
+    60% {
+        left: 80%;
+        z-index: 0;
+    }
+    70% {
+        left: 60%;
+        z-index: 0;
+    }
+    80% {
+        left: 40%;
+        z-index: 0;
+    }
+    90% {
+        left: 20%;
+        z-index: 0;
+    }
+    100% {
+        left: 0;
+        z-index: 0;
+    }
+}
