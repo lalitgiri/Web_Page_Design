@@ -19,7 +19,7 @@ var colorArray = [
 canvas.addEventListener('mousemove', function (event) {
     mouse.x = event.x;
     mouse.y = event.y;
-
+    
 });
 window.addEventListener('resize', function () {
     canvas.width = window.innerWidth;
