@@ -1,0 +1,81 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    position: relative;
+    width: 100vw;
+    display: block;
+    height: auto;
+    background: goldenrod;
+}
+.content{
+    position: relative;
+    width: 100%;
+    display: block;
+    height: auto;
+}
+.align-left{
+    text-align: left;
+}
+.align-right{
+    text-align: right;
+}
+.left , .right{
+    margin: 10px 50px ;
+    height: 300px;
+    width: 500px;
+    position: relative;
+    display: block;
+    transition: 1s;
+    display: inline-block;
+}
+
+.left{
+    /* float: left; */
+    background: lawngreen;
+    animation: leftAnimation 1s ease-in 0s 1;
+}
+
+.right{
+    /* float: right; */
+    background: khaki;
+    animation: leftAnimation 1s ease-in 0s 1;
+}
+
+@keyframes leftAnimation{
+    0%{
+        width: 100px;
+    }
+    25%{
+        width: 200px;
+    }
+    50%{
+        width: 300px;
+    }
+    75%{
+        width: 400px;
+    }
+    100%{
+        width: 500px;
+    }
+}
+
+@keyframes rightAnimation{
+    0%{
+        width: 500px;
+    }
+    25%{
+        width: 400px;
+    }
+    50%{
+        width: 300px;
+    }
+    75%{
+        width: 200px;
+    }
+    100%{
+        width: 100px;
+    }
+}
