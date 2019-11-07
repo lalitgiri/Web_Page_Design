@@ -1,0 +1,81 @@
+body {
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    background-color: darkcyan;
+    box-sizing: border-box;
+}
+
+div.block {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div.container {
+    height: 50%;
+    width: 18%;
+    position: relative;
+    /* transition: 1s; */
+    /* transition-delay: 0.5s; */
+    /* background-color: aliceblue; */
+}
+
+.img-block {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    transition: 1s;
+    transition-timing-function: ease-out;
+    transition-delay: 1s;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    transition: 1s;
+    transition-delay: 1s;
+}
+
+.content {
+    box-sizing: border-box;
+    padding: 5%;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: rotateY(90deg);
+    transition: 1s;
+    /* transition-delay: 1s; */
+    transition-timing-function: ease-out;
+    /* z-index: -1; */
+    background-color: aliceblue;
+}
+
+p {
+    text-align: justify;
+}
+
+div.container:hover {
+    cursor: pointer;
+    /* transform: rotateY(180deg); */
+}
+
+div.container:hover .img-block, div.container:hover .img-block img {
+    transition-delay: 0s;
+    transform: rotateY(90deg);
+}
+
+div.container:hover .content {
+    transition-delay: 1s;
+    transform: rotateY(0deg);
+}
