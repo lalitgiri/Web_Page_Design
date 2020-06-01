@@ -1,0 +1,17 @@
+@import "./scss/all.scss";
+
+@mixin theme-colors($theme) {
+  background-color: map-get($theme, back-ground);
+  color: map-get($theme, color);
+  label {
+    background-color: map-get($theme, label-background);
+    color: map-get($theme, text-color);
+  }
+}
+
+.header {
+  @include theme-colors($dark-theme);
+  body.light & {
+    @include theme-colors($light-theme);
+  }
+}
